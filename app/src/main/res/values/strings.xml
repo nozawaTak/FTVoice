@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Audio Play</string>
+    <string name="startRec">Record</string>
+    <string name="stopRec">Stop Record</string>
+    <string name="photo_view_description">test</string>
+    <string name="startPlay">Sound</string>
+    <string name="stopPlay">Stop Sound</string>
+    <string name="testPlay">TEST PLAY</string>
+    <string name="stopTest">TEST STOP</string>
+</resources>

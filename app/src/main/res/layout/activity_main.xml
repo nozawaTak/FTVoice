@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <jp.ac.titech.itpro.sdl.audioplay.DrawCircle
+        android:id="@+id/circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginHorizontal="100dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/hz_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/analyze_voice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:text="Analyze Voice"
+        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintEnd_toStartOf="@+id/start_Record"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_view" />
+
+    <Button
+        android:id="@+id/start_Record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="300dp"
+        android:text="Record"
+        app:layout_constraintBottom_toTopOf="@+id/play_Sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/analyze_voice"
+        app:layout_constraintTop_toBottomOf="@+id/circle_view" />
+
+    <Button
+        android:id="@+id/play_Sound"
+        android:layout_width="0dp"
+        android:layout_height="196dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:text="Sound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/test"
+        app:layout_constraintTop_toBottomOf="@+id/start_Record" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="0dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:text="TEST PLAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play_Sound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyze_voice" />
+
+</android.support.constraint.ConstraintLayout>
